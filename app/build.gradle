@@ -48,11 +48,12 @@ dependencies {
 
     // Hilt: https://developer.android.com/training/dependency-injection/hilt-android
     implementation "com.google.dagger:hilt-android:2.38.1"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     kapt "com.google.dagger:hilt-compiler:2.38.1"
 
     // RxJava: https://github.com/ReactiveX/RxAndroid
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
-    implementation 'io.reactivex.rxjava3:rxjava:3.1.14'
+    implementation 'io.reactivex.rxjava3:rxjava:3.1.4'
 
     // Room: https://developer.android.com/jetpack/androidx/releases/room?gclid=CjwKCAjwxOCRBhA8EiwA0X8hi-t-RXnIjJDT5Ms1f2Md5OvpJH8XibV8NQ3AWGJ4na5Gn2sWtUb-DhoCsHcQAvD_BwE&gclsrc=aw.ds
     implementation "androidx.room:room-runtime:$room_version"
