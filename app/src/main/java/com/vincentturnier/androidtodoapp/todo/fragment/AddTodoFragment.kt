@@ -65,7 +65,7 @@ class AddTodoFragment : BaseFragment<FragmentAddTodoBinding>() {
         binding!!.addTodo.setOnClickListener {
             viewModel.addTodo(Todo(
                 title = binding!!.title.text.toString(),
-                description = binding!!.title.text.toString(),
+                description = binding!!.descriptionEditText.text.toString(),
                 priority = TodoPriority.CAUTION,
                 dateTime = LocalDateTime.now()
             ))

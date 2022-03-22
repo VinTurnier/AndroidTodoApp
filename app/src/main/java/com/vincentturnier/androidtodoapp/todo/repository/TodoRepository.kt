@@ -14,4 +14,6 @@ class TodoRepository @Inject constructor(
 
     fun allTodos(): Flowable<List<Todo>> = todoDao.all()
 
+    fun todo(id: Int) = todoDao.getTodoBy(id)
+
 }

@@ -15,6 +15,9 @@ interface TodoDao {
     @Query("select * from todo")
     fun all(): Flowable<List<Todo>>
 
+    @Query("select * from todo where id = :id")
+    fun getTodoBy(id: Int): Single<Todo>
+
     @Insert(onConflict = REPLACE)
     fun insert(todo: Todo): Single<Long>
 

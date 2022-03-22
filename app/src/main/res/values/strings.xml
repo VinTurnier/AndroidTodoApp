@@ -3,5 +3,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="todo_title">%1$s</string>
+    <string name="todo_description">%1$s</string>
     <string name="wroke_in_progress">Wroke in Progress</string>
+    <string name="wow_this_is_good">Wow This is Good</string>
+    <string name="wowo">Wowo</string>
 </resources>
