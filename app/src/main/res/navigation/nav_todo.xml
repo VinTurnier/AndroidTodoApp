@@ -12,12 +12,20 @@
         tools:layout="@layout/fragment_todo_list" >
         <action
             android:id="@+id/navigateToTodoDetails"
-            app:destination="@id/todoDetailsFragment" >
+            app:destination="@id/todoDetailsFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out">
 
         </action>
         <action
             android:id="@+id/navigateToAddTodo"
-            app:destination="@id/addTodoFragment" />
+            app:destination="@id/addTodoFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_down" />
     </fragment>
     <fragment
         android:id="@+id/todoDetailsFragment"
